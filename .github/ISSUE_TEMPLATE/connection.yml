@@ -1,0 +1,51 @@
+name: Connection or tool problem / مشكلة اتصال أو أداة
+description: Report a safe, synthetic reproduction. Reports are public.
+title: "[Support] "
+body:
+  - type: markdown
+    attributes:
+      value: "Reports are public. Never include keys, tokens, signed URLs, private project IDs, prompts or personal data. البلاغ عام؛ لا تضع مفاتيح أو بيانات خاصة."
+  - type: input
+    id: tool
+    attributes:
+      label: Tool name / اسم الأداة
+      placeholder: stitch_list_projects
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: Approximate time and time zone / الوقت والمنطقة الزمنية
+    validations:
+      required: true
+  - type: input
+    id: safe_error
+    attributes:
+      label: Safe error code only / كود الخطأ فقط
+      description: Do not paste logs or URLs. لا ترسل سجلات أو روابط.
+  - type: dropdown
+    id: read
+    attributes:
+      label: Does reading work in a fresh chat? / هل القراءة تنجح في محادثة جديدة؟
+      options:
+        - "Yes / نعم"
+        - "No / لا"
+        - "Not tested / لم أختبر"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Synthetic reproduction / خطوات بمثال وهمي
+      description: Expected and actual behavior, without private designs or account data.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting / قبل الإرسال
+      options:
+        - label: I removed secrets, private IDs, URLs and personal data / أزلت الأسرار والبيانات الخاصة
+          required: true
+        - label: I did not repeat an uncertain write / لم أكرر كتابة نتيجتها غير مؤكدة
+          required: true
