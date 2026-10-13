@@ -1,6 +1,9 @@
 # Jervis Stitch MCP — support / الدعم
 
-Public support for the independent Jervis Tech integration with Google Stitch.
+Public support for Jervis Stitch MCP, a Jervis Tech product using Google Stitch.
+
+Verified individual publisher / الناشر الفردي: **كيرلس زكريا ميخائيل خليل**.
+The owner selected individual publication; Jervis Tech is product branding.
 
 Website: https://jervis-stitch-mcp-landing-42a71b70.apps.devops.jervis.cloud/
 
